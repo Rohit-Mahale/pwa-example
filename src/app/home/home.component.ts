@@ -12,7 +12,9 @@ import { Router } from "@angular/router";
 export class HomeComponent implements OnInit {
 
   constructor(private localstorageService:LocalstorageService,private router:Router) { }
-
+  email:any ='';
+  password:any ='';
+  
   ngOnInit() {
   }
 
