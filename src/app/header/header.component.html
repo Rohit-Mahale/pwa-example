@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+        <mat-toolbar-row>
+       
+           <span><a href="/">HOME</a></span>
+           <span class="spacer"></span>
+           <a mat-button *ngIf="!userName" routerLink="/registration">Register</a>
+           <a mat-button *ngIf="!userName" routerLink="/home">Login</a>
+           <a mat-button *ngIf="userName" (click)="logOut()">Log Out</a>
+
+        </mat-toolbar-row>
+</mat-toolbar>
+<!-- <router-outlet></router-outlet> -->
